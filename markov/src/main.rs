@@ -50,7 +50,6 @@ fn main() {
 
     //State is the central data structure, which has wordlist vector for every
     //Prefix combination
-    //I use Fnv hasher here, it is slightly faster than Rust std lib hasher
     let mut state: HashMap<Prefix, WordList> = HashMap::with_capacity(APPROX_NUM_PREFIXES);
 
     //Build
